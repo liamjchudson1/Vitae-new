@@ -51,10 +51,11 @@ const ServiceCard = ({ id, label }) => (
   <button
     onClick={() => setService(id)}
     className={classNames(
-      "rounded-2xl border border-[#C1A14F]/30 bg-white/5 px-4 py-3 text-left transition-all",
+      "rounded-2xl border border-[#C1A14F]/30 bg-gradient-to-br from-[#141B34] to-[#0A1429] 
+       px-4 py-3 text-left transition-all duration-300",
       service === id
         ? "ring-2 ring-[#C1A14F]"
-        : "hover:border-[#C1A14F] hover:shadow-[0_0_10px_rgba(193,161,79,0.6)]"
+        : "hover:border-[#C1A14F] hover:shadow-[0_0_20px_rgba(193,161,79,0.45)] hover:scale-[1.02]"
     )}
   >
     <div className="text-sm font-semibold text-[#EDEADE]">{label}</div>
