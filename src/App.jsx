@@ -64,9 +64,10 @@ const ServiceCard = ({ id, label }) => (
 
 function Section({ title, children, actions }) {
   return (
-    <div className="rounded-2xl border border-[#C1A14F]/30 bg-white/5 p-5 shadow-[inset_0_1px_0_rgba(255,255,255,0.04)]">
+    <div className="rounded-2xl border border-[#C1A14F]/30 bg-gradient-to-br from-[#1A223D] to-[#0A1429] 
+                    shadow-[inset_0_1px_0_rgba(255,255,255,0.1),0_0_15px_rgba(193,161,79,0.25)] p-5">
       <div className="mb-3 flex items-center justify-between">
-        <h2 className="text-lg font-semibold tracking-wide text-[#EDEADE]">{title}</h2>
+        <h2 className="text-lg font-serif font-semibold tracking-wide text-[#EDEADE]">{title}</h2>
         <div className="flex items-center gap-2">{actions}</div>
       </div>
       {children}
