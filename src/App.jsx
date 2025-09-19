@@ -47,6 +47,20 @@ function Pill({ children }) {
     </span>
   );
 }
+const ServiceCard = ({ id, label }) => (
+  <button
+    onClick={() => setService(id)}
+    className={classNames(
+      "rounded-2xl border border-[#C1A14F]/30 bg-white/5 px-4 py-3 text-left transition-all",
+      service === id
+        ? "ring-2 ring-[#C1A14F]"
+        : "hover:border-[#C1A14F] hover:shadow-[0_0_10px_rgba(193,161,79,0.6)]"
+    )}
+  >
+    <div className="text-sm font-semibold text-[#EDEADE]">{label}</div>
+    <div className="text-xs text-[#C1A14F]/70">Tap to select</div>
+  </button>
+);
 
 function Section({ title, children, actions }) {
   return (
