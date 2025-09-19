@@ -121,12 +121,12 @@ export default function App() {
   }
 
   return (
-    <div className="min-h-screen bg-[#0A1429] bg-[radial-gradient(ellipse_at_top,_#1b2444_0%,_#0A1429_60%)] p-4 md:p-8 text-[#EDEADE]">
-      <header className="mb-6 flex flex-col gap-3 md:flex-row md:items-end md:justify-between">
-        <div>
-          <h1 className="text-3xl font-bold tracking-widest">V I T A E</h1>
-          <p className="text-sm text-[#C1A14F]">Global wellness without compromise</p>
-        </div>
+  <div className="min-h-screen bg-[#0A1429] bg-gradient-to-b from-[#0A1429] via-[#141B34] to-[#0A1429] relative">
+  <div className="absolute inset-0 bg-[url('/noise-texture.png')] opacity-10"></div>
+  <div className="relative z-10 p-4 md:p-8 text-[#EDEADE]">
+    {/* existing header + content */}
+  </div>
+</div>
         <div className="flex items-center gap-2">
           <button
             onClick={() => setActiveTab("member")}
