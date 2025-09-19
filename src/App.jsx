@@ -1,4 +1,4 @@
-
+import React, { useMemo, useState } from "react";
 
 /**
  * Vitae — Luxury MVP Concierge (single-file React)
