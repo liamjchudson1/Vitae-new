@@ -137,14 +137,14 @@ export default function App() {
             )}
           >
             Member View
-          </button>
-          <button
-            onClick={() => setActiveTab("concierge")}
-            className={classNames(
-              "rounded-full px-4 py-2 text-sm border border-[#C1A14F]/40",
-              activeTab === "concierge" ? "bg-[#C1A14F] text-black" : "bg-transparent text-[#EDEADE]"
-            )}
-          >
+          <button className="w-full rounded-xl bg-gradient-to-r from-[#C1A14F] via-[#d7b768] to-[#C1A14F]
+                   px-6 py-3 text-sm font-semibold text-black tracking-wide
+                   shadow-[0_4px_15px_rgba(193,161,79,0.4)]
+                   hover:shadow-[0_6px_25px_rgba(193,161,79,0.6)]
+                   transition-all duration-300 relative overflow-hidden">
+  <span className="relative z-10">Send to Concierge</span>
+  <span className="absolute inset-0 bg-gradient-to-r from-white/20 to-transparent opacity-0 hover:opacity-40 transition-opacity"></span>
+</button>
             Concierge Dashboard
           </button>
         </div>
